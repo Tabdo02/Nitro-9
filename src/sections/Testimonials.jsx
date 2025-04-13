@@ -3,6 +3,7 @@ import { arrowLeft, arrowRight } from "../assets"
 import TestimonialCard from "../components/TestimonialCard"
 import { testimonials } from "../constants"
 
+
 const Testimonials = () => {
   const scrollRef = useRef(null);
   // Function to scroll left

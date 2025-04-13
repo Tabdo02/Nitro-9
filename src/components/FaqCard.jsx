@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { plus } from "../assets"
-import {SlideDown} from 'react-slidedown'
-import 'react-slidedown/lib/slidedown.css';
+import SlideDown from "./SlideDown";
 
 const FaqCard = ({q,index}) => {
   const [activeId, setActiveId] = useState(null);
@@ -20,15 +19,15 @@ const FaqCard = ({q,index}) => {
             </button>
          </div>   
         <div className="w-full h-[1px] bg-primary-800 mt-4" />
-       <SlideDown>
-        {active && (
-                <div className="mt-5">
-                <p className="p3 font-medium pointer-events-none">
-                Our target customers and companies mostly start-ups, small businesses, non-profits, and enterprise clients across the industries.
-                </p>
-            </div>
-            )}
-       </SlideDown>
+        <SlideDown active={active}>
+        <div className="mt-5">
+          <p className="p3 font-medium pointer-events-none">
+            Our target customers and companies mostly start-ups, small
+            businesses, non-profits, and enterprise clients across the
+            industries.
+          </p>
+        </div>
+      </SlideDown>
     </div>
   )
 }
