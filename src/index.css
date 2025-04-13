@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=supreme@100,200,300,400,500,700,800&display=swap" rel="stylesheet');
+@import url("https://api.fontshare.com/v2/css?f[]=switzer@100,200,300,400,500,600,700,800,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+  body{
+    @apply font-outfit bg-shades-300 text-base text-shades-300;
+  }
+
+  * {
+    @apply tracking-[-2%];
+  }
+
+  @font-face {
+    font-family: 'TT Commons Pro';
+    src: url('/fonts/tt_commons_pro_demibold.otf') format('opentype');
+    font-weight: 600; 
+    font-style: normal;
+  }
+}
+
+*{
+ scroll-behavior: smooth; 
+ }
+
+ @layer components{
+  .btn-request {
+    @apply text-white font-bold px-9 py-6 p3 min-w-[212px]  transition-colors;
+  }
+  .btn-request-1{
+    @apply btn-request bg-primary-500 hover:bg-primary-800;
+  }
+  .btn-request-2{
+    @apply btn-request bg-primary-800;
+  }
+  .btn-see-all-1{
+    @apply btn-request border-[2.5px] border-primary-600 hover:bg-primary-600;
+  }
+  .btn-see-all-2{
+    @apply btn-request bg-primary-600 ;
+  }
+  .btn-read-more{
+    @apply text-neutral-800 p4 font-bold py-3 flex items-center;
+  }
+
+ }
+
+ @layer utilities {
+
+  .d1{
+    @apply font-outfit text-[120px] leading-[126px];
+  }
+
+  .d2{
+    @apply font-outfit text-[72px] leading-[94px];
+  }
+
+  .h1{
+    @apply font-outfit text-[64px] leading-[83px];
+  }
+  .h1-small-tt{
+    @apply font-ttCommons text-[56px] leading-[70px];
+  }
+  .h1-small{
+    @apply font-outfit text-[54px] leading-[70px];
+  }
+
+  .h2{
+    @apply font-outfit text-[48px] leading-[62px];
+  }
+  .h2-medium{
+    @apply font-outfit text-[40px] leading-[62px];
+  }
+  .h2-small{
+    @apply font-outfit text-[36px] leading-[47px];
+  }
+
+  .h3{
+    @apply font-outfit text-[32px] leading-[42px];
+  }
+  .h3-small{
+    @apply font-outfit text-[28px] leading-[36px];
+  }
+
+  .h4{
+    @apply font-outfit text-[24px] leading-[31px];
+  }
+
+  .h5{
+    @apply font-outfit text-[20px] leading-[26px];
+  }
+
+  .p1{
+    @apply font-supreme text-[24px] leading-[31px];
+  }
+
+  .p2{
+    @apply font-supreme text-[20px] leading-[26px];
+  }
+
+  .p3{
+    @apply font-supreme text-[18px] leading-[23px];
+  }
+
+  .p4{
+    @apply font-supreme text-[16px] leading-[21px];
+  }
+
+  .p5{
+    @apply font-supreme text-[14px] leading-[19px];
+  }
+  .g-mx{
+    @apply mx-4 md:mx-8 lg:mx-20 xl:mx-40;
+  }
+  .p-px{
+    @apply px-5 md:px-8 lg:px-20 xl:px-[140px];
+  }
+  .scroll-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-hide{
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+  }
+  .tags{
+    @apply py-1 px-3 bg-primary-700 rounded-full;
+  }
+
+ }
