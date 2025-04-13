@@ -98,10 +98,11 @@ import tm4 from './team members/tm4.png'
 import tm5 from './team members/tm5.png'
 import tm6 from './team members/tm6.png'
 
-import img1 from './works/img1.jpg'
+import img1 from './works/Img1.jpg'
 import img2 from './works/img2.jpg'
 import img3 from './works/img3.jpg'
 import img4 from './works/img4.jpg'
+
 
 import wp1 from './works/post/wp1.png'
 import wp2 from './works/post/wp2.png'
