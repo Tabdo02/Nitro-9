@@ -5,7 +5,7 @@ import Works from "./sections/Works"
 const Work = () => {
   return (
     <>
-    <Header className="bg-shades-50" />
+    <Header className="absolute bg-shades-50" />
     <Works />
     <Footer />
     </>

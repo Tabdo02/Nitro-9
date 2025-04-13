@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { wp1, wp2, wp3, wp4, XoolTech } from '../assets';
 import ArrowBackward from '../assets/SVG/ArrowBackwork'
 import ArrowForward from '../assets/SVG/ArrowForward';
@@ -9,7 +10,9 @@ const WorkHero = () => {
     <section className="p-px py-10 md:py-[100px] bg-shades-50">
      
        <div className='flex items-center gap-x-2 mb-[60px] md:mb-20'>
-            <ArrowBackward />
+           <Link to="/work">
+                <ArrowBackward />
+           </Link>
             <p className='p3 font-medium'>Back to Work Page</p>
        </div>
 
